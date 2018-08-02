@@ -15,10 +15,10 @@ import numpy as np
 from matplotlib import cm, pyplot as plt
 from matplotlib.dates import YearLocator, MonthLocator
 try:
-    from matplotlib.finance import quotes_historical_yahoo_ochl
+    from mpl_finance import quotes_historical_yahoo_ochl
 except ImportError:
     # For Matplotlib prior to 1.5.
-    from matplotlib.finance import (
+    from mpl_finance import (
         quotes_historical_yahoo as quotes_historical_yahoo_ochl
     )
 
